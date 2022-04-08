@@ -1,5 +1,6 @@
 import React from 'react';
 import {  } from 'react-native';
+import { HighlightCard } from '../../components/HighlightCard';
 
 import { 
   Container,
@@ -28,6 +29,7 @@ export function Dashboard() {
           <Icon name='power' />
         </UserWrapper>
       </Header>
+      <HighlightCard />
     </Container>
   )
 }
