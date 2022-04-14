@@ -12,6 +12,7 @@ import {
 import theme from './src/global/styles/theme';
 
 import { Register } from './src/pages/Register';
+import { Dashboard } from './src/pages/Dashboard';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
