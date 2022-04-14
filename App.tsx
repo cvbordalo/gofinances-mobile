@@ -13,6 +13,7 @@ import theme from './src/global/styles/theme';
 
 import { Register } from './src/pages/Register';
 import { Dashboard } from './src/pages/Dashboard';
+import { CategorySelectModal } from './src/pages/CategorySelectModal';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Register />
+      <CategorySelectModal />
     </ThemeProvider>
   )
 }
