@@ -6,14 +6,16 @@ import { Input } from "../Input";
 
 import { 
   Container,
+  Error
 } from "./styles";
 
 interface InputFormProps extends TextInputProps {
   control: Control;
   name: string;
+  error: string;
 };
 
-export function InputForm({ control, name, ...rest }: InputFormProps) {
+export function InputForm({ control, name, error, ...rest }: InputFormProps) {
   return (
     <Container>
       <Controller
@@ -27,6 +29,7 @@ export function InputForm({ control, name, ...rest }: InputFormProps) {
         )}
         name={name}
       />
+      {error && <Error>{ error }</Error>}
     </Container>
       
   );
